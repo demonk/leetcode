@@ -1,0 +1,26 @@
+#include "stdio.h"
+
+int romanNumber(char* s){
+    char pre=0,cur=0;
+    int sum=0;
+
+    for(int i=0;s[i]!='\0';i++){
+        pre=cur;
+        cur=s[i];
+        printf("pre=%c,cur=%c\n",pre,cur);
+
+        switch(cur){
+            case 'V':
+                break;
+        }
+
+    }
+    return sum;
+}
+
+int main(){
+    char *romanNumbers="VIII";
+    int result=romanNumber(romanNumbers);
+
+    printf("\nresult=%d\n",result);
+}
